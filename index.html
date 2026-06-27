@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BIO Termites Control | Hunter Wu 白蚁灭巢专家</title>
+  <meta name="description" content="BIO Termites Control | Hunter Wu 白蚁灭巢专家，提供白蚁防治、白蚁灭巢、Bio Bait System、环保害虫控制产品、壁虎驱赶、黑蚁驱赶和蟑螂诱饵。">
+  <style>
+    :root {
+      --green: #46a51d;
+      --green-dark: #24720f;
+      --orange: #df7f1b;
+      --ink: #172014;
+      --muted: #5d6958;
+      --line: #dce8d5;
+      --bg: #f7faf4;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .contact-strip {
+      background: var(--green-dark);
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .contact-strip .wrap {
+      min-height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .contact-strip a {
+      font-weight: 800;
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 92px;
+      height: auto;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .brand-sub {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .nav a:hover {
+      color: var(--green-dark);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn.primary {
+      color: #fff;
+      background: var(--green-dark);
+    }
+
+    .btn.secondary {
+      color: var(--green-dark);
+      background: #fff;
+      border-color: var(--line);
+    }
+
+    .hero {
+      background:
+        linear-gradient(105deg, rgba(247, 250, 244, 0.95) 0%, rgba(247, 250, 244, 0.84) 52%, rgba(255, 255, 255, 0.2) 100%),
+        url("assets/hunter-wu.png") right 8% center / contain no-repeat;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-content {
+      max-width: 620px;
+      padding: 72px 0;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 14px 0 18px;
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    .en {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.94em;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .trust-item {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      font-weight: 800;
+    }
+
+    .trust-item span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: contain;
+      padding: 18px;
+      background: #f5f5f2;
+    }
+
+    .feature-card div {
+      padding: 24px;
+    }
+
+    .feature-card h3 {
+      margin: 0 0 10px;
+      color: var(--green-dark);
+      font-size: 24px;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .service,
+    .why-card,
+    .process-step {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .service h3,
+    .product h3,
+    .why-card h3,
+    .process-step h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .service p,
+    .product p,
+    .profile-copy p,
+    .why-card p,
+    .process-step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .about-band {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .about-panel {
+      background: #f8fbf5;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .about-panel p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .about-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      counter-reset: step;
+    }
+
+    .process-step {
+      position: relative;
+      padding-top: 54px;
+    }
+
+    .process-step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: 18px;
+      left: 20px;
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--green-dark);
+      font-weight: 800;
+    }
+
+    .quote-band {
+      margin-top: 28px;
+      padding: 22px;
+      border-radius: 8px;
+      background: #edf8e8;
+      border: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .quote-banner {
+      background: var(--orange);
+      color: #fff;
+      text-align: center;
+      padding: 46px 0;
+    }
+
+    .quote-banner h2 {
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .quote-banner .btn {
+      background: #fff;
+      color: var(--green-dark);
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .testimonial {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .testimonial p {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .testimonial strong {
+      display: block;
+      color: var(--ink);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .mock-form,
+    .contact-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .mock-field {
+      min-height: 48px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      color: var(--muted);
+      background: #fbfdf9;
+    }
+
+    .mock-field.large {
+      min-height: 110px;
+    }
+
+    .contact-card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    .quote-band strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .quote-band span {
+      color: var(--muted);
+    }
+
+    .products {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .product {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .product-img {
+      aspect-ratio: 4 / 5;
+      background: #f5f5f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 14px;
+    }
+
+    .product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .product-body {
+      padding: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      color: var(--green-dark);
+      background: #edf8e8;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .profile-photo {
+      border-radius: 8px;
+      overflow: hidden;
+      background: #e9ece7;
+    }
+
+    .profile-copy {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 30px;
+    }
+
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .keywords span {
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: #f0f4ee;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .cta {
+      background: var(--green-dark);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: #fff;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 24px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+    }
+
+    .cta .btn.primary {
+      background: #fff;
+      color: var(--green-dark);
+    }
+
+    .cta .btn.secondary {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.38);
+    }
+
+    footer {
+      padding: 24px 0;
+      background: #11180f;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+    }
+
+    @media (max-width: 920px) {
+      .hero {
+        background:
+          linear-gradient(180deg, rgba(247, 250, 244, 0.98), rgba(247, 250, 244, 0.86)),
+          url("assets/hunter-wu.png") right bottom / 70% auto no-repeat;
+        min-height: 760px;
+        align-items: flex-start;
+      }
+
+      .hero-content {
+        padding-top: 54px;
+      }
+
+      .service-grid,
+      .about-grid,
+      .why-grid,
+      .process-grid,
+      .feature-grid,
+      .testimonial-grid,
+      .contact-grid,
+      .product-grid,
+      .profile {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: min(100% - 24px, 1120px);
+      }
+
+      .topbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 12px 0;
+      }
+
+      .top-actions,
+      .hero-actions {
+        width: 100%;
+      }
+
+      .btn {
+        flex: 1 1 auto;
+      }
+
+      .hero {
+        min-height: 720px;
+        background:
+          linear-gradient(180deg, rgba(247, 250, 244, 1) 0%, rgba(247, 250, 244, 0.96) 55%, rgba(247, 250, 244, 0.48) 100%),
+          url("assets/hunter-wu.png") center bottom / 92% auto no-repeat;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+
+      .trust-row,
+      .service-grid,
+      .about-grid,
+      .why-grid,
+      .process-grid,
+      .feature-grid,
+      .testimonial-grid,
+      .contact-grid,
+      .product-grid,
+      .profile {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-strip">
+    <div class="wrap">
+      <span>BIO Termites Control | 白蚁灭巢专家 Hunter Wu</span>
+      <span>联络电话 / Call: <a href="tel:+60176138978">017-613 8978</a></span>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="BIO Termites Control">
+        <img src="assets/logo.png" alt="BIO Termites Control logo">
+        <div>
+          <div class="brand-title">BIO Termites Control</div>
+          <div class="brand-sub">无毒无害，还你美好家居</div>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">关于我们</a>
+        <a href="#method">除蚁方法</a>
+        <a href="#process">运作模式</a>
+        <a href="#products">产品</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+      <div class="top-actions">
+        <a class="btn primary" href="https://wa.me/60176138978" target="_blank" rel="noopener">立即 WhatsApp</a>
+        <a class="btn secondary" href="https://www.facebook.com/profile.php?id=61572369892231" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow">专业服务 · 最新方法 · 环保产品</div>
+          <h1>BIO Termites Control<br>白蚁灭巢专家 Hunter Wu</h1>
+          <p class="lead">为住宅、店铺、办公室及商业空间提供白蚁检查、灭巢处理、Bio Bait System 和环保害虫防治产品。<span class="en">Professional termite inspection, termite nest treatment, Bio Bait System service, and eco-friendly pest control products for residential and commercial spaces.</span></p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://wa.me/60176138978" target="_blank" rel="noopener">请求报价 / Get Quotation</a>
+            <a class="btn secondary" href="#method">了解除蚁方法</a>
+          </div>
+          <div class="trust-row" aria-label="Service highlights">
+            <div class="trust-item">白蚁防治<span>Termite Control</span></div>
+            <div class="trust-item">灭巢处理<span>Termite Nest Treatment</span></div>
+            <div class="trust-item">环保方案<span>Eco-Friendly Solutions</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>关于 BIO Termites Control<br>About BIO Termites Control</h2>
+          <p>BIO Termites Control 专注白蚁防治与害虫控制，结合环保理念、bait system 方法和清楚的服务流程，帮助顾客处理家居与商业空间的白蚁问题。<span class="en">BIO Termites Control focuses on termite control and pest management through eco-friendly concepts, bait system methods, and a clear service process.</span></p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img src="assets/logo.png" alt="BIO Termites Control introduction">
+            <div>
+              <h3>介绍 / Introduction</h3>
+              <p>白蚁常隐藏在木材、墙体、天花、地板及潮湿区域，早期不容易发现。我们协助顾客检查、判断和处理白蚁活动。<span class="en">Termites often hide in timber, walls, ceilings, flooring, and damp areas. We help customers inspect, identify, and treat termite activity.</span></p>
+            </div>
+          </article>
+          <article class="feature-card" id="method">
+            <img src="assets/bio-termites-control-professional.png" alt="Bio bait system termite treatment">
+            <div>
+              <h3>诱饵箱 / Bait System</h3>
+              <p>Bio Bait System 适合用于白蚁灭巢与后续观察。处理方式以系统化检查、设置和跟进为重点。<span class="en">The Bio Bait System is suitable for termite nest treatment and follow-up observation through systematic inspection, setup, and monitoring.</span></p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="assets/hunter-wu.png" alt="Hunter Wu termite specialist">
+            <div>
+              <h3>专业人员 / Specialist</h3>
+              <p>Hunter Wu 提供现场检查、报价建议、处理安排与后续跟进，让顾客更安心了解每一步。<span class="en">Hunter Wu provides site inspection, quotation advice, treatment arrangement, and follow-up support so customers understand every step clearly.</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-banner">
+      <div class="wrap">
+        <h2>请求更多信息并获得报价<br>Request More Information And Get a Quotation</h2>
+        <a class="btn" href="https://wa.me/60176138978" target="_blank" rel="noopener">WhatsApp 017-613 8978</a>
+      </div>
+    </section>
+
+    <section class="about-band" id="process">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>我们的运作模式<br>How It Works</h2>
+          <p>从联系、检查、报价、设置系统到后续跟进，流程清楚，方便顾客了解服务安排。<span class="en">From contact, inspection, quotation, system setup, and follow-up, the process is clear and easy for customers to understand.</span></p>
+        </div>
+        <div class="process-grid">
+          <article class="process-step">
+            <h3>联系检查<br>Contact</h3>
+            <p>顾客联系 Hunter Wu，说明白蚁或害虫出没位置。<span class="en">Contact Hunter Wu and describe where termites or pests appear.</span></p>
+          </article>
+          <article class="process-step">
+            <h3>现场评估<br>Inspection</h3>
+            <p>检查可疑区域、蚁路、木材损坏和潮湿位置。<span class="en">Inspect suspicious areas, mud tubes, damaged timber, and damp spots.</span></p>
+          </article>
+          <article class="process-step">
+            <h3>报价建议<br>Quotation</h3>
+            <p>根据现场情况提供处理方案与费用说明。<span class="en">Provide treatment recommendations and pricing based on the site condition.</span></p>
+          </article>
+          <article class="process-step">
+            <h3>设置系统<br>Setup</h3>
+            <p>按需要设置 Bio Bait System 或相关处理方案。<span class="en">Set up the Bio Bait System or a suitable treatment plan when needed.</span></p>
+          </article>
+          <article class="process-step">
+            <h3>例行跟进<br>Follow-Up</h3>
+            <p>安排后续检查，观察白蚁活动变化。<span class="en">Arrange follow-up checks to observe changes in termite activity.</span></p>
+          </article>
+          <article class="process-step">
+            <h3>最终检查<br>Final Check</h3>
+            <p>确认白蚁活动情况，并按现场结果调整建议。<span class="en">Review termite activity and adjust advice according to the result.</span></p>
+          </article>
+          <article class="process-step">
+            <h3>预防建议<br>Prevention</h3>
+            <p>提供木材、潮湿区域和缝隙位置的预防建议。<span class="en">Provide prevention advice for timber, damp areas, cracks, and gaps.</span></p>
+          </article>
+          <article class="process-step">
+            <h3>后续支持<br>Support</h3>
+            <p>顾客可通过电话或 Facebook 继续联系咨询。<span class="en">Customers can continue enquiries by phone or Facebook.</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>产品与解决方案<br>Products & Solutions</h2>
+          <p>除了白蚁防治，也提供壁虎驱赶、黑蚁驱赶和蟑螂诱饵等环保害虫控制产品。<span class="en">In addition to termite control, we provide eco-friendly pest products such as gecko repellent, black ant repellent, and cockroach bait.</span></p>
+        </div>
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-img">
+              <img src="assets/bio-termites-control-professional.png" alt="Bio-Termites Control SGS certified eco friendly termite product">
+            </div>
+            <div class="product-body">
+              <span class="tag">SGS Certified</span>
+              <h3>Bio-Termites Control</h3>
+              <p>通过 SGS 标示的环保白蚁防治产品，适合用于白蚁控制相关场景。<span class="en">An eco-friendly termite control product with SGS marking, suitable for termite control applications.</span></p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <img src="assets/ecogecko-spray-professional.png" alt="EcoGecko Spray natural eco friendly gecko repellent">
+            </div>
+            <div class="product-body">
+              <span class="tag">Natural Spray</span>
+              <h3>EcoGecko Spray</h3>
+              <p>天然环保型壁虎驱赶喷雾，适用于墙面、门窗、厨房周围和常见出没位置。<span class="en">A natural, eco-friendly gecko repellent spray for walls, doors, windows, kitchens, and common activity areas.</span></p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <img src="assets/black-ant-repellent-professional.png" alt="Black ant repellent liquid product">
+            </div>
+            <div class="product-body">
+              <span class="tag">Black Ants</span>
+              <h3>黑蚁驱赶药水<br>Black Ant Repellent</h3>
+              <p>小瓶设计，适合用于墙角、门窗边、厨房周围、缝隙或蚁路附近。<span class="en">A small bottle product suitable for corners, door and window edges, kitchen areas, cracks, and ant trails.</span></p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <img src="assets/roach-bait-r12-professional.png" alt="Roach Bait R-12 cockroach bait liquid">
+            </div>
+            <div class="product-body">
+              <span class="tag">Cockroach Bait</span>
+              <h3>Roach Bait R-12</h3>
+              <p>蟑螂药水型诱饵，适合点涂在厨房角落、橱柜边、下水道附近和电器后方。<span class="en">A cockroach bait liquid for targeted use around kitchen corners, cabinets, drains, and behind appliances.</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-title">
+          <h2>客户反馈<br>Customer Feedback</h2>
+          <p>我们重视顾客体验、清楚沟通和后续服务。<span class="en">We value customer experience, clear communication, and follow-up service.</span></p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial">
+            <p>服务讲解清楚，检查后会说明问题位置和处理建议。</p>
+            <strong>住宅顾客 / Home Customer</strong>
+          </article>
+          <article class="testimonial">
+            <p>适合店铺和办公室咨询，流程简单，报价说明清楚。</p>
+            <strong>商业顾客 / Business Customer</strong>
+          </article>
+          <article class="testimonial">
+            <p>产品和服务选择清楚，方便针对不同害虫问题处理。</p>
+            <strong>产品顾客 / Product Customer</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-band" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="section-title">
+            <h2>留言询问<br>Leave Us A Message</h2>
+            <p>欢迎留下姓名、电话、地区和白蚁问题说明，Hunter Wu 可根据情况回复检查与报价建议。<span class="en">Leave your name, contact number, area, and termite issue details so Hunter Wu can advise on inspection and quotation.</span></p>
+          </div>
+          <div class="mock-form" aria-label="Contact form preview">
+            <div class="mock-field">姓名 / Name</div>
+            <div class="mock-field">联络电话 / Contact Number</div>
+            <div class="mock-field">地区 / Area</div>
+            <div class="mock-field large">留言 / Message</div>
+            <a class="btn primary" href="https://wa.me/60176138978" target="_blank" rel="noopener">WhatsApp 联系 Hunter Wu</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h2>联系我们<br>Contact Us</h2>
+          <p><strong>Hunter Wu 白蚁灭巢专家</strong></p>
+          <p>电话 / Call:<br><a href="tel:+60176138978"><strong>017-613 8978</strong></a></p>
+          <p>WhatsApp:<br><a href="https://wa.me/60176138978" target="_blank" rel="noopener"><strong>WhatsApp 017-613 8978</strong></a></p>
+          <p>Facebook:<br><a href="https://www.facebook.com/profile.php?id=61572369892231" target="_blank" rel="noopener">Hunter Wu Facebook Page</a></p>
+          <p>服务范围 / Service:<br>白蚁防治、白蚁灭巢、Bio Bait System、环保害虫控制产品。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">BIO Termites Control | Hunter Wu 白蚁灭巢专家 | 017-613 8978</div>
+  </footer>
+</body>
+</html>
