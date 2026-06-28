@@ -398,6 +398,148 @@
       color: var(--green-dark);
     }
 
+    .system-section {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .system-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .system-panel,
+    .system-point {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fbf5;
+      padding: 26px;
+    }
+
+    .system-panel p,
+    .system-point p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .system-panel p:last-child,
+    .system-point p:last-child {
+      margin-bottom: 0;
+    }
+
+    .system-points {
+      display: grid;
+      gap: 14px;
+    }
+
+    .system-point h3 {
+      margin: 0 0 8px;
+      color: var(--green-dark);
+      font-size: 21px;
+    }
+
+    .recommendation-band {
+      background: #f8fbf5;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .recommendation-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .recommendation-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .recommendation-card h3 {
+      margin: 0 0 12px;
+      color: var(--green-dark);
+      font-size: 24px;
+    }
+
+    .recommendation-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .recommendation-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .cert-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .cert-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 76px;
+      height: 76px;
+      margin-bottom: 14px;
+      border-radius: 50%;
+      background: #edf8e8;
+      color: var(--green-dark);
+      font-weight: 900;
+      font-size: 18px;
+      border: 2px solid var(--line);
+    }
+
+    .cert-card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      color: var(--green-dark);
+    }
+
+    .cert-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .placement-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .placement-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .placement-card h3 {
+      margin: 0 0 8px;
+      color: var(--green-dark);
+      font-size: 21px;
+    }
+
+    .placement-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
     .testimonial-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -603,6 +745,10 @@
       .why-grid,
       .process-grid,
       .feature-grid,
+      .system-layout,
+      .recommendation-grid,
+      .cert-grid,
+      .placement-grid,
       .testimonial-grid,
       .contact-grid,
       .product-grid,
@@ -648,6 +794,10 @@
       .why-grid,
       .process-grid,
       .feature-grid,
+      .system-layout,
+      .recommendation-grid,
+      .cert-grid,
+      .placement-grid,
       .testimonial-grid,
       .contact-grid,
       .product-grid,
@@ -745,6 +895,134 @@
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="recommendation-band">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>公司介绍与专业建议<br>About Us & Our Recommendation</h2>
+          <p>我们为住宅与商业客户提供害虫控制服务，并采用生物科技与环保方法处理有害生物问题。<span class="en">We provide pest control services for residential and commercial customers, using biotechnology and eco-friendly methods to manage pest issues.</span></p>
+        </div>
+        <div class="recommendation-grid">
+          <article class="recommendation-card">
+            <h3>关于 Bio Termites<br>About Bio Termites</h3>
+            <p>Bio Termites 以生物科技和环保方式为核心，提供住宅与商业害虫控制服务。我们的服务方向注重对环境更友善，同时有效处理不同类型的有害生物问题。</p>
+            <p><span class="en">Bio Termites focuses on biotechnology and eco-friendly pest control services for residential and commercial spaces, helping address pest problems while being mindful of environmental concerns.</span></p>
+            <p>技术人员会接受培训，以确保服务过程更专业，并尽力满足顾客需求。</p>
+            <p><span class="en">Service technicians are trained to provide professional service and support customer needs.</span></p>
+          </article>
+          <article class="recommendation-card">
+            <h3>我们的建议<br>Our Recommendation</h3>
+            <p>根据检查结果，我们建议使用 Bio Termites Control Baiting System 作为处理白蚁入侵的有效方式之一。</p>
+            <p><span class="en">Based on inspection findings, we recommend the Bio Termites Control Baiting System as one effective approach for termite infestation management.</span></p>
+            <p>这个方法针对白蚁巢群源头，通过诱饵系统逐步控制白蚁活动，并提供较长期的防护方向。使用错误的处理方式，可能导致白蚁扩散并加重问题。</p>
+            <p><span class="en">This method targets termite colonies at the source through a baiting system, helping control termite activity and support long-term protection. Using the wrong treatment approach may cause the colony to spread and worsen the infestation.</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-title">
+          <h2>专业认证与保障<br>Professional Certifications & Assurance</h2>
+          <p>品牌资料显示，BIO Termites Control 注重安全、检测认证与环保方向，为顾客提供更安心的白蚁与害虫防治方案。<span class="en">According to the brand materials, BIO Termites Control emphasizes safety, certification, and eco-friendly pest control solutions.</span></p>
+        </div>
+        <div class="cert-grid">
+            <article class="cert-card">
+              <div class="cert-mark">SGS</div>
+              <h3>SGS 认证资料<br>SGS Documentation</h3>
+              <p>资料中展示多份 SGS 文件与检测报告，提升顾客对产品与服务的信心。<span class="en">The materials show SGS documents and reports to support customer confidence.</span></p>
+            </article>
+            <article class="cert-card">
+              <div class="cert-mark">ECO</div>
+              <h3>环保方向<br>Eco Friendly</h3>
+              <p>强调 Eco Friendly 环保理念，适合重视家居安全与环境友善的顾客。<span class="en">Eco-friendly positioning for customers who care about home safety and environmental responsibility.</span></p>
+            </article>
+            <article class="cert-card">
+              <div class="cert-mark">1M</div>
+              <h3>保障标示<br>Liability Protection</h3>
+              <p>品牌资料列出 1 Million Liability Protection 标示，体现专业服务保障形象。<span class="en">Brand materials include a 1 Million Liability Protection mark as part of the professional assurance presentation.</span></p>
+            </article>
+            <article class="cert-card">
+              <div class="cert-mark">安全</div>
+              <h3>安全第一<br>Safety First</h3>
+              <p>以“安全第一”为服务理念，重视顾客、家居与处理过程的安心感。<span class="en">Safety First reflects the commitment to customer confidence, home care, and a responsible service process.</span></p>
+            </article>
+          </div>
+      </div>
+    </section>
+
+    <section class="system-section" id="bait-system">
+      <div class="wrap">
+        <div class="section-title">
+          <div class="eyebrow">Bio Termites Control Baiting System</div>
+          <h2>白蚁诱饵系统如何运作<br>How The Termite Baiting System Works</h2>
+          <p>地下白蚁会在地底建立巢穴，并通过地下通道到建筑物寻找木材和食物来源。Bio Termites Control 诱饵系统利用白蚁自然觅食和互相喂食的行为，把诱饵带回巢群，帮助达到灭巢效果。<span class="en">Subterranean termites build colonies underground and move through hidden tunnels to search for food. The Bio Termites Control baiting system uses their natural foraging and feeding behavior to carry bait back to the colony.</span></p>
+        </div>
+        <div class="system-layout">
+          <div class="system-panel">
+            <h3>核心原理 / Main Concept</h3>
+            <p>工蚁会不断寻找食物来源。当发现诱饵后，工蚁会进食并把信息传递给其他成员，让更多白蚁来到诱饵站取食。</p>
+            <p><span class="en">Worker termites search continuously for food. Once they find the bait, they feed on it and recruit other colony members to the bait station.</span></p>
+            <p>诱饵中的成分会干扰白蚁蜕皮和成长过程，使白蚁群逐步减少活动，最终帮助达到消除巢群的目标。</p>
+            <p><span class="en">The bait contains an insect growth regulator that disrupts termite molting and development, helping reduce colony activity and work toward colony elimination.</span></p>
+          </div>
+          <div class="system-points">
+            <article class="system-point">
+              <h3>1. 发现白蚁活动 / Detect Activity</h3>
+              <p>先检查木材、墙角、天花、地板、蚁路和潮湿位置，确认白蚁活动范围。<span class="en">Inspect timber, walls, ceilings, flooring, mud tubes, and damp areas to identify termite activity.</span></p>
+            </article>
+            <article class="system-point">
+              <h3>2. 设置诱饵站 / Install Bait Station</h3>
+              <p>在合适位置设置诱饵站，让白蚁自然进入并取食诱饵。<span class="en">Bait stations are placed at suitable locations so termites can naturally enter and feed.</span></p>
+            </article>
+            <article class="system-point">
+              <h3>3. 带回巢群 / Transfer To Colony</h3>
+              <p>白蚁通过互相喂食和信息素路径，把诱饵影响传回巢群。<span class="en">Through food sharing and scent trails, the bait effect is transferred back into the colony.</span></p>
+            </article>
+            <article class="system-point">
+              <h3>4. 持续防护 / Ongoing Protection</h3>
+              <p>诱饵站也可作为预防措施，帮助减少新白蚁群攻击建筑结构的风险。<span class="en">Bait stations may also be used as a preventive measure to help reduce the risk of new termite activity attacking the structure.</span></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-title">
+          <h2>室内与户外诱饵系统安装<br>Indoor & Outdoor Termite Baiting System</h2>
+          <p>诱饵系统可根据白蚁活动位置，设置在室内或户外重点区域，帮助追踪白蚁活动并进行持续处理。<span class="en">The baiting system can be installed indoors or outdoors based on termite activity, helping monitor and treat termite movement over time.</span></p>
+        </div>
+        <div class="placement-grid">
+            <article class="placement-card">
+              <h3>室内墙角与柜边<br>Indoor Corners & Cabinets</h3>
+              <p>适合设置在墙角、橱柜边、门框附近、木地板边缘和白蚁出没位置。<span class="en">Suitable for wall corners, cabinet edges, door frames, timber flooring edges, and active termite areas.</span></p>
+            </article>
+            <article class="placement-card">
+              <h3>墙体与裂缝位置<br>Walls & Cracks</h3>
+              <p>如果墙面、砖缝或木结构附近出现蚁路，可在附近安排诱饵站观察与处理。<span class="en">When mud tubes appear near walls, brick gaps, or timber structures, bait stations can be placed nearby for monitoring and treatment.</span></p>
+            </article>
+            <article class="placement-card">
+              <h3>室外建筑周边<br>Outdoor Perimeter</h3>
+              <p>可设置在建筑外墙周边、庭院、泥土、花园或白蚁可能进入建筑的路径。<span class="en">Outdoor stations can be placed around building perimeters, gardens, soil areas, and possible termite entry paths.</span></p>
+            </article>
+            <article class="placement-card">
+              <h3>地面与草地区域<br>Ground & Lawn Areas</h3>
+              <p>户外地面、草地或潮湿区域适合设置监测点，帮助及早发现新白蚁活动。<span class="en">Ground, lawn, and damp outdoor areas can be monitored to help detect new termite activity early.</span></p>
+            </article>
+            <article class="placement-card">
+              <h3>专业检查后设置<br>Installed After Inspection</h3>
+              <p>诱饵站位置会根据现场检查结果决定，避免随意摆放导致效果不理想。<span class="en">Bait station placement is decided after inspection to avoid poor results from random installation.</span></p>
+            </article>
+            <article class="placement-card">
+              <h3>后续跟进观察<br>Follow-Up Monitoring</h3>
+              <p>设置后可安排后续检查，观察白蚁取食情况和活动变化。<span class="en">Follow-up monitoring helps observe termite feeding behavior and changes in activity.</span></p>
+            </article>
+          </div>
       </div>
     </section>
 
